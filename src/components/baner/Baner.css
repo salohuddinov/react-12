@@ -1,0 +1,37 @@
+.banner {
+    display: block;
+    width: 100vw;
+    height: 653.73px;
+    margin: 20px 0;
+    margin-left: -110px;
+}
+
+.banner__botm {
+    display: flex;
+    width: 1252.86px;
+    gap: 5px;
+    height: 388.48px;
+    margin-top: -15px;
+    box-shadow: 0px 10px 25px 0px rgba(102, 102, 102, 0.15);
+}
+
+.banner__botm__card {
+    width: 417.94px;
+    height: 358.31px;
+    background: #ddd;
+}
+
+.banner__botm__card p {
+    display: flex;
+    width: 202.18px;
+    height: 58.08px;
+    margin: 30px;
+    color: rgb(34, 50, 99);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+    z-index: 99;
+}

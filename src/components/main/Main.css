@@ -1,0 +1,239 @@
+.select {
+    display: block;
+    margin-right: 0;
+    margin: 22px 0;
+    border: 2px solid #4b4b4b;
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 22px;
+}
+
+.select option {
+    background: #ddd;
+}
+
+
+.wrapper {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    width: 310px;
+    height: 465.38px;
+    box-sizing: border-box;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+}
+
+.card h6 {
+    width: 64.56px;
+    height: 31px;
+    border-radius: 15px 0px 20px 0px;
+    background: rgb(59, 183, 126);
+    color: rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding-top: 7px;
+    z-index: 99;
+}
+
+.card img {
+    display: flex;
+    width: 278px;
+    height: 246px;
+    object-fit: cover;
+    margin: 10px auto;
+    margin-top: 2px;
+}
+
+.card p {
+    color: rgb(173, 173, 173);
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 17px;
+}
+
+.card h2 {
+    display: flex;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 285px;
+    height: 39.19px;
+    color: rgb(37, 61, 78);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.star {
+    display: flex;
+    margin: 2px 20px;
+    gap: 25px;
+}
+
+.star p {
+    color: rgb(182, 182, 182);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.rating:not(:checked)>input {
+    position: absolute;
+    appearance: none;
+}
+
+.rating:not(:checked)>label {
+    float: right;
+    cursor: pointer;
+    font-size: 25px;
+    color: #666;
+}
+
+.rating:not(:checked)>label:before {
+    content: "★";
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #e58e09;
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #ff9e0b;
+}
+
+.rating>input:checked~label {
+    color: #ffa723;
+}
+
+.prodact__button {
+    display: block;
+    width: 99px;
+    height: 35px;
+    border-radius: 5px 50px 5px 50px;
+    padding: 10px 20px;
+    background: #7f7f7f;
+    margin: 20px auto;
+    transition: .4s;
+}
+
+.prodact__button:hover {
+    background: transparent;
+    border: 5px 50% 5px 50%;
+    border: 1px solid #ff0000;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.price h3 {
+    color: rgb(59, 183, 126);
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 17px;
+}
+
+.price h4 {
+    color: rgb(173, 173, 173);
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: line-through;
+}
+
+.card button {
+    display: block;
+    width: 84.91px;
+    height: 36px;
+    border-radius: 4px;
+    background: rgb(222, 249, 236);
+    color: rgb(59, 183, 126);
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-left: 205px;
+    margin-top: -25px;
+    transition: .4s;
+}
+
+.card button:hover {
+    background: transparent;
+    color: #ff0000;
+    border: 1px solid #a4a4a4dd;
+}
+
+.btn-see {
+    display: flex;
+    width: 105px;
+    height: 35px;
+    padding: 6px 11px;
+    font-size: 18px;
+    color: rgb(59, 183, 126);
+    margin: 20px auto;
+    background: #fff;
+    border: 2px solid #6c6c6cdd;
+    border-radius: 15px;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        margin-left: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-left: 600px;
+    }
+}
+
+@media (max-width: 285px) {
+    .wrapper {
+        margin-left: 500px;
+    }
+}
