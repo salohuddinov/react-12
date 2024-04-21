@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { API_URL } from '../../static'
 import { FcLike, FcDislike } from "react-icons/fc";
+import Fobanner from '../../components/fobanner/Fobanner';
 
 
 
@@ -80,10 +81,10 @@ function SingleProduct() {
                         <h2 onClick={toggleLike}>
                             {liked ? <FcDislike /> : <FcLike />}
                         </h2>
-
                     </form>
                 </div>
             </div>
+            <Fobanner />
         </div>
     )
 }

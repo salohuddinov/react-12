@@ -1,6 +1,6 @@
 .singleproduct {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 25px;
     margin: 55px 0;
 }
@@ -21,7 +21,7 @@
     width: 90px;
     height: 50px;
     box-sizing: border-box;
-    border: 2px solid rgb(59, 183, 126);
+    border: 2px solid #222;
     border-radius: 5px;
     background: rgb(255, 255, 255);
     padding-left: 10px;
@@ -62,7 +62,7 @@
 }
 
 .single__price {
-    color: rgb(59, 183, 126);
+    color: #222;
     font-family: Quicksand;
     font-size: 58px;
     font-weight: 700;
@@ -99,7 +99,7 @@
     box-sizing: border-box;
     border: 1px solid rgb(233, 233, 233);
     border-radius: 5px;
-    background: rgb(59, 183, 126);
+    background: #222;
     margin-top: 8px;
 }
 
@@ -107,7 +107,7 @@
     width: 159.59px;
     height: 50px;
     border-radius: 5px;
-    background: rgb(59, 183, 126);
+    background: #222;
     color: rgb(255, 255, 255);
     font-family: Quicksand;
     font-size: 16px;
@@ -131,96 +131,4 @@
     letter-spacing: 0.5px;
     text-align: center;
 
-}
-
-.body {
-    display: block;
-    width: 982.86px;
-    height: 910px;
-    box-sizing: border-box;
-    border: 1px solid rgb(236, 236, 236);
-    border-radius: 15px;
-    margin-top: -1000px;
-}
-
-.body__top {
-    display: flex;
-    gap: 10px;
-    padding: 25px 20px;
-}
-
-.body__top h3 {
-    box-sizing: border-box;
-    border: 1px solid rgb(236, 236, 236);
-    border-radius: 30px;
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.05);
-    background: rgb(255, 255, 255);
-    color: rgb(126, 126, 126);
-    font-family: Quicksand;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 0%;
-    text-align: center;
-    padding: 12px 10px;
-    cursor: pointer;
-    transition: .4s;
-}
-
-.body__top h3:hover {
-    color: rgb(59, 183, 126);
-}
-
-.infarmation {
-    width: 972.02px;
-    height: 43px;
-    color: rgb(126, 126, 126);
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding: 0 20px;
-    margin-bottom: 100px;
-}
-
-.body p {
-    color: rgb(126, 126, 126);
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding: 5px 20px;
-}
-
-.body h2 {
-    color: rgb(37, 61, 78);
-    font-family: Quicksand;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    letter-spacing: 0%;
-    text-align: left;
-    padding: 20px;
-}
-
-.info {
-    display: flex;
-    gap: 32px;
-    padding: 20px;
-    padding-top: 0;
-    box-shadow: 0 1px 0 #ddd;
-}
-
-.info__left h4 {
-    color: rgb(126, 126, 126);
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
 }

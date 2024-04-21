@@ -19,41 +19,96 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.card {
-    width: 310px;
-    height: 465.38px;
+.cardd {
+    width: 301px;
+    height: 388px;
     box-sizing: border-box;
     border: 1px solid rgb(236, 236, 236);
     border-radius: 15px;
-    background: rgb(255, 255, 255);
+    background: #e6e6e6;
 }
 
-.card h6 {
-    width: 64.56px;
-    height: 31px;
-    border-radius: 15px 0px 20px 0px;
-    background: rgb(59, 183, 126);
-    color: rgb(255, 255, 255);
-    font-family: Lato;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0%;
-    text-align: center;
-    padding-top: 7px;
-    z-index: 99;
-}
-
-.card img {
+.cardd img {
     display: flex;
     width: 278px;
-    height: 246px;
+    height: 219px;
     object-fit: cover;
     margin: 10px auto;
-    margin-top: 2px;
 }
 
-.card p {
+
+.card {
+    --bg: #f7f7f8;
+    width: 278px;
+    height: 219px;
+    text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6, .4, 0, 1), transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin: 10px auto;
+}
+
+
+.card> :not(span) {
+    transition: .3s cubic-bezier(.6, .4, 0, 1);
+}
+
+.card>strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -.035em;
+}
+
+.card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6, .4, 0, 1);
+}
+
+.card:hover span {
+    top: 0;
+    font-size: 1.2em;
+}
+
+.card:hover {
+    background: rgb(255, 255, 255);
+    opacity: 0.95;
+}
+
+.card:hover>div,
+.card:hover>strong {
+    opacity: 0;
+}
+
+.span__icons {
+    width: 52px;
+    height: 51px;
+    font-size: 12px;
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #DDD;
+    color: rgb(51, 160, 255);
+}
+
+.cardd p {
     color: rgb(173, 173, 173);
     font-family: Lato;
     font-size: 12px;
@@ -64,7 +119,7 @@
     padding-left: 17px;
 }
 
-.card h2 {
+.cardd h2 {
     display: flex;
     overflow: hidden;
     display: -webkit-box;
@@ -84,8 +139,8 @@
 
 .star {
     display: flex;
-    margin: 2px 20px;
-    gap: 25px;
+    margin-left: 99px;
+    margin-top: -10px;
 }
 
 .star p {
@@ -153,10 +208,11 @@
     display: flex;
     gap: 10px;
     margin-top: 25px;
+    margin-left: 55px;
 }
 
 .price h3 {
-    color: rgb(59, 183, 126);
+    color: rgb(64, 191, 255);
     font-family: Quicksand;
     font-size: 18px;
     font-weight: 700;
@@ -177,7 +233,18 @@
     text-decoration-line: line-through;
 }
 
-.card button {
+.price h2 {
+    color: rgb(251, 113, 129);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+
+.cardd button {
     display: block;
     width: 84.91px;
     height: 36px;
@@ -195,7 +262,7 @@
     transition: .4s;
 }
 
-.card button:hover {
+.cardd button:hover {
     background: transparent;
     color: #ff0000;
     border: 1px solid #a4a4a4dd;

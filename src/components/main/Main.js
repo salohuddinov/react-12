@@ -4,7 +4,9 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { API_URL } from "../../static"
 import Skeleton from '../skeleton/Skeleton'
-import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+
 
 
 function Main() {
@@ -39,10 +41,17 @@ function Main() {
     }
 
     let products = data?.map(el => (
-        <div key={el.id} className="card">
-            <h6>New</h6>
+        <div key={el.id} className="cardd">
             <Link to={`/product/${el.id}`}>
-                <img src={el.image} alt="" />
+                <div class="card">
+                    <div class="icon">
+                        <img src={el.image} alt="" />
+                    </div>
+                    <span>
+                        <FaRegHeart className='span__icons' />
+                        <HiOutlineShoppingCart className='span__icons' />
+                    </span>
+                </div>
             </Link>
             <p>{el.category}</p>
             <h2>{el.title}</h2>
@@ -59,13 +68,12 @@ function Main() {
                     <input checked="" type="radio" id="star1" name="rate" value="1" />
                     <label for="star1" title="text"></label>
                 </div>
-                <p>({el.rating.rate})</p>
             </div>
             <div className="price">
                 <h3>${el.price}</h3>
                 <h4>${el.rating.count}</h4>
+                <h2>24% Off</h2>
             </div>
-            <button><MdOutlineShoppingCart /> Add</button>
         </div>
     ))
     let categoryItems = categories?.map((el, inx) => <option key={inx} value={el}>{el}</option>)
@@ -85,4 +93,4 @@ function Main() {
     )
 }
 
-export default Main
+export default memo(Main) 
